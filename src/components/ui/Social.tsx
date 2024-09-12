@@ -8,7 +8,12 @@ const socials = [
     {icon: <FaPhone />, path:"tel:+17145197299"},
 ];
 
-const Social = ({containerStyles, iconStyles}) => {
+interface SocialProps {
+    containerStyles: string;
+    iconStyles: string;  
+  }
+
+const Social: React.FC<SocialProps> = ({containerStyles, iconStyles}) => {
     return (
         <div className={containerStyles}>
         {socials.map((item, index) => {
