@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter, FaInstagram, FaPhone } fr
 const socials = [
     {icon: <FaGithub />, path:"https://github.com/ruiner28"},
     {icon: <FaLinkedinIn />, path:"https://www.linkedin.com/in/gaurav-pawar-10/"},
-    {icon: <FaInstagram />, path:"https://www.instagram.com/instagram/?hl=en"},
+    {icon: <FaInstagram />, path:"https://www.instagram.com/_gaurav__28?igsh=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr"},
     {icon: <FaPhone />, path:"tel:+17145197299"},
 ];
 
