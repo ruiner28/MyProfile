@@ -131,13 +131,13 @@ const Resume = () => {
             <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
 
-          {/* content */}
+          {/* content */}         
           <div className="min-h-[70vh] w-full">
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <ScrollArea className="h-[400px]">
+                <h3 className="text-4xl font-bold gap-[30px]">{experience.title}</h3>
+                <ScrollArea className="h-[400px] mt-[50px]">
                   <ul className="grid grid-cols-1 gap-[30px]">
                     {" "}
                     {/* lg:grid-cols-2  add this to make two cols. */}
@@ -145,7 +145,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[400px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] h-[500px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 mb:mx-auto"
                         >
                           <div className="flex items-center gap-2">
                             {/* dot */}
@@ -163,7 +163,8 @@ const Resume = () => {
                     })}
                   </ul>
                 </ScrollArea>
-              </div>
+              </div> 
+              
             </TabsContent>
 
             {/* education */}
