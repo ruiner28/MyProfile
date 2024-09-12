@@ -3,9 +3,11 @@ import { OpacityIcon } from "@radix-ui/react-icons";
 import { AnimatePresence,motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
-
+type PageTransaction = {
+    children: React.ReactNode;
+  };
  
-const PageTransaction = ({ children }) => {
+const PageTransaction: React.FC<PageTransaction> =  ({ children }) => {
     const pathname = usePathname();
     return (
         <AnimatePresence>
