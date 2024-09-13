@@ -13,7 +13,7 @@ const stats = [
     },
     {
         num:1,
-        text: "Hackethon Winner",
+        text: "Hackathon Winner",
     },
     {
         num:70,
