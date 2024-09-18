@@ -93,30 +93,36 @@ const Resume = () => {
         </section>
 
         {/* Experience Section */}
+       
         <section className="mb-16">
-  <h3 className="text-4xl font-bold mb-8 text-center text-purple-400">
+  <h3 className="text-4xl font-bold mb-4 text-center text-purple-400">
     <span className="border-b-4 border-purple-400 inline-block">{experience.title}</span>
   </h3>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {/* Left Side: Button List */}
     <div className="flex flex-col gap-4">
       {experience.items.map((item, index) => (
         <button
           key={index}
           onClick={() => setSelectedExperience(index)}
-          className={`py-3 px-6 rounded-lg transition-colors relative ${
-            selectedExperience === index ? 'underline text-accent' : 'text-white'
-          } hover:underline`}
+          className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative underline ${
+            selectedExperience === index ? 'border-accent' : 'border-gray-800'
+          } hover:border-accent`}
         >
           {item.position} - {item.company}
         </button>
       ))}
     </div>
+
+    {/* Right Side: Experience Details */}
     <div className="text-white">
       <div className="mb-6">
         <h4 className="text-2xl text-accent font-bold">
           {experience.items[selectedExperience].position} - {experience.items[selectedExperience].company}
         </h4>
-        <p className="text-lg mb-2">{experience.items[selectedExperience].duration}</p>
+        <p className="text-lg mb-2">
+          {experience.items[selectedExperience].duration}
+        </p>
         <ul className="list-disc pl-5 space-y-2">
           {experience.items[selectedExperience].description.map((desc, idx) => (
             <li key={idx}>{desc}</li>
@@ -126,6 +132,7 @@ const Resume = () => {
     </div>
   </div>
 </section>
+
 
 
 
