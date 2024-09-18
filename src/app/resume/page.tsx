@@ -45,19 +45,19 @@ const experience = {
 const education = {
   icon: "assets/resume/cap.svg",
   title: "My education",
-  description: "🎓 Master's in Computer Science",
+  description: "",
   items: [
+    {
+      University: "California State University Fullerton",
+      Major: "🎓  MS Computer Science",
+      duration: "2024-2026",
+    },
     {
       University: "Savitribai Phule Pune University - (SPPU)",
       Major: "BE Information Technology",
       duration: "2018-2022",
     },
 
-    {
-      University: "California State University Fullerton",
-      Major: "MS Computer Science",
-      duration: "2024-2026",
-    },
   ],
 };
 
