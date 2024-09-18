@@ -1,23 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { useEffect } from 'react';  // Import useEffect
 import Social from "@/components/ui/Social";
 
 
 const Contact = () => {
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-          window.scrollTo({
-              top: document.body.scrollHeight, // Scroll to the bottom of the page
-              behavior: 'smooth' // Smooth scrolling effect
-          });
-      }, 4000);
-      return () => clearTimeout(timer);
-    }
-  ,     []); 
-
     return (
         <div className="flex flex-col justify-center items-center h-screen text-center container mx-auto">
             <p className="text-accent mb-4">What's Next?</p>
@@ -58,6 +45,7 @@ const Contact = () => {
 
 export default Contact;
 
+{/** */}
     
 
 
