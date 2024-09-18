@@ -4,25 +4,25 @@ import { useState } from "react"; // Import useState
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { CiMenuFries } from 'react-icons/ci';
+import { CiMenuFries } from "react-icons/ci";
 
 const links = [
   {
     name: "Home",
-    path: "/"
+    path: "/",
   },
   {
     name: "Projects", // Projects
-    path: "/work"
+    path: "/work",
   },
   {
     name: "About", // this was resume
-    path: "/resume"
+    path: "/resume",
   },
   {
     name: "Contact",
-    path: "/contact"
-  }
+    path: "/contact",
+  },
 ];
 
 const MobileNav = () => {
@@ -40,7 +40,7 @@ const MobileNav = () => {
         {/* logo */}
         <div className="mt-28 mb-28 text-center text-2xl">
           <Link href="/">
-            <h1 className="text-4xl font-semibold">
+            <h1 className="text-4xl font-semibold" onClick={handleClose}>
               Gaurav<span className="text-accent">.</span>
             </h1>
           </Link>
