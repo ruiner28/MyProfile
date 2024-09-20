@@ -111,7 +111,7 @@ const Resume = () => {
                 <button
                   key={index}
                   onClick={() => setSelectedExperience(index)}
-                  className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative underline ${
+                  className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative ${
                     selectedExperience === index
                       ? "border-accent"
                       : "border-gray-800"
