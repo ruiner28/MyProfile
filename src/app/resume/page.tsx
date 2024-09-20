@@ -1,7 +1,25 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3,
+  FaReact,
+  FaNodeJs,
+  FaJs,
+  FaCoffee,
+  FaDatabase,
+  FaAws,
+  FaLeaf,
+} from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiPython,
+  SiFlask,
+  SiPostman,
+  SiMongodb,
+  SiApachemaven,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -61,13 +79,18 @@ const skills = {
   title: "Skills",
   description: "Here's a rundown of the technologies I'm familiar with!",
   skillList: [
-    { icon: <FaHtml5 color="#E34F26" />, name: "HTML 5" },
-    { icon: <FaCss3 color="#1572B6" />, name: "CSS 3" },
+    { icon: <SiPython color="#3776AB" />, name: "Python" },
+    { icon: <SiFlask color="#000000" />, name: "Flask" },
+    { icon: <FaCoffee color="#007396" />, name: "Java" },
+    { icon: <FaLeaf color="#6DB33F" />, name: "Spring Boot" },
+    { icon: <FaAws color="#FF9900" />, name: "AWS" },
     { icon: <FaJs color="#F7DF1E" />, name: "JavaScript" },
     { icon: <FaReact color="#61DAFB" />, name: "React.js" },
     { icon: <SiNextdotjs color="#000000" />, name: "Next.js" },
     { icon: <SiTailwindcss color="#38BDF8" />, name: "Tailwind CSS" },
-    { icon: <FaNodeJs color="#68A063" />, name: "Node.js" },
+    { icon: <FaDatabase color="#4479A1" />, name: "SQL" },
+    { icon: <SiMongodb color="#47A248" />, name: "MongoDB" },
+    { icon: <SiPostman color="#FF6C37" />, name: "Postman" },
   ],
 };
 
@@ -83,10 +106,8 @@ const Resume = () => {
       <div className="container mx-auto px-4 py-12 ">
         {/* About Section */}
         <section className="mb-16 text-left  flex flex-col">
-        <h3 className="text-4xl font-bold mb-4 text-left ">
-            <span className="border-b-4  inline-block">
-              {about.title}
-            </span>
+          <h3 className="text-4xl font-bold mb-4 text-left ">
+            <span className="border-b-4  inline-block">{about.title}</span>
           </h3>
           <p className="text-lg mb-4">{about.description}</p>
           <ul className="text-white/70 space-y-3">
@@ -100,9 +121,7 @@ const Resume = () => {
 
         <section className="mb-16">
           <h3 className="text-4xl font-bold mb-4 text-left ">
-            <span className="border-b-4  inline-block">
-              {experience.title}
-            </span>
+            <span className="border-b-4  inline-block">{experience.title}</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Left Side: Button List */}
@@ -111,7 +130,7 @@ const Resume = () => {
                 <button
                   key={index}
                   onClick={() => setSelectedExperience(index)}
-                  className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative ${
+                  className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative  ${
                     selectedExperience === index
                       ? "border-accent"
                       : "border-gray-800"
@@ -147,9 +166,7 @@ const Resume = () => {
         {/* Skills Section */}
         <section className="mb-16">
           <h2 className="text-4xl font-bold mb-4 text-left">
-            <span className="border-b-4 inline-block">
-              {skills.title}
-            </span>
+            <span className="border-b-4 inline-block">{skills.title}</span>
           </h2>
 
           <p className="text-left mb-6 text-white/70">{skills.description}</p>
