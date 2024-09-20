@@ -26,6 +26,16 @@ const projects = [
     socials: [{ icon: <FaGithub /> }],
   },
   {
+    title: "Portfolio Project",
+    description: [
+      "Developed an interactive portfolio website using React, Next.js, and Tailwind CSS",
+      "Implemented smooth animations and transitions for a polished user experience while ensuring responsive design across devices.",
+    ],
+    link: "https://github.com/ruiner28/MyProfile",
+    technologies: "React, Next.js, Tailwind CSS",
+    socials: [{ icon: <FaGithub /> }],
+  },
+  {
     title: "Employee Management System",
     description: [
       "Implemented a Java-based microservice using Spring Boot.",
@@ -56,11 +66,12 @@ const Work = () => {
         <span className="border-b-4 inline-block pb-2">Projects</span>
       </h3>
       <p className="text-left mb-6 text-white/70">Some Things I’ve Built</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div className="flex overflow-x-auto space-x-4 pb-4">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300 bg-[#232329]"
+            className="min-w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105"
           >
             <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
 
@@ -77,7 +88,7 @@ const Work = () => {
             <div className="flex space-x-4">
               {project.socials.map((item, socialIndex) => (
                 <Link legacyBehavior key={socialIndex} href={project.link}>
-                  <a className=" hover:text-gray-500 text-3xl">{item.icon}</a>
+                  <a className="hover:text-gray-500 text-3xl">{item.icon}</a>
                 </Link>
               ))}
             </div>
