@@ -24,7 +24,7 @@ const about = {
 };
 
 const experience = {
-  title: "My Experience",
+  title: "Experience",
   items: [
     {
       company: "@ Accenture",
@@ -42,7 +42,7 @@ const experience = {
 };
 
 const education = {
-  title: "My Education",
+  title: "Education",
   items: [
     {
       university: "California State University Fullerton",
@@ -58,7 +58,7 @@ const education = {
 };
 
 const skills = {
-  title: "My Skills",
+  title: "Skills",
   description: "Here's a rundown of the technologies I'm familiar with!",
   skillList: [
     { icon: <FaHtml5 color="#E34F26" />, name: "HTML 5" },
@@ -80,10 +80,14 @@ const Resume = () => {
       animate={{ opacity: 1, transition: { delay: 0.5, duration: 1 } }}
       className="min-h-[100vh] bg-[#1c1c1e] text-white"
     >
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-12 ">
         {/* About Section */}
-        <section className="mb-16 text-center flex flex-col items-center">
-          <h3 className="text-4xl font-bold mb-4 text-purple-400 border-b-4 border-purple-400">{about.title}</h3>
+        <section className="mb-16 text-left  flex flex-col">
+        <h3 className="text-4xl font-bold mb-4 text-left ">
+            <span className="border-b-4  inline-block">
+              {about.title}
+            </span>
+          </h3>
           <p className="text-lg mb-4">{about.description}</p>
           <ul className="text-white/70 space-y-3">
             {about.info.map((item, index) => (
@@ -93,56 +97,62 @@ const Resume = () => {
         </section>
 
         {/* Experience Section */}
-       
+
         <section className="mb-16">
-  <h3 className="text-4xl font-bold mb-4 text-center text-purple-400">
-    <span className="border-b-4 border-purple-400 inline-block">{experience.title}</span>
-  </h3>
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    {/* Left Side: Button List */}
-    <div className="flex flex-col gap-4">
-      {experience.items.map((item, index) => (
-        <button
-          key={index}
-          onClick={() => setSelectedExperience(index)}
-          className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative underline ${
-            selectedExperience === index ? 'border-accent' : 'border-gray-800'
-          } hover:border-accent`}
-        >
-          {item.position} - {item.company}
-        </button>
-      ))}
-    </div>
+          <h3 className="text-4xl font-bold mb-4 text-left ">
+            <span className="border-b-4  inline-block">
+              {experience.title}
+            </span>
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Left Side: Button List */}
+            <div className="flex flex-col gap-4">
+              {experience.items.map((item, index) => (
+                <button
+                  key={index}
+                  onClick={() => setSelectedExperience(index)}
+                  className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative underline ${
+                    selectedExperience === index
+                      ? "border-accent"
+                      : "border-gray-800"
+                  } hover:border-accent`}
+                >
+                  {item.position} - {item.company}
+                </button>
+              ))}
+            </div>
 
-    {/* Right Side: Experience Details */}
-    <div className="text-white">
-      <div className="mb-6">
-        <h4 className="text-2xl text-accent font-bold">
-          {experience.items[selectedExperience].position} - {experience.items[selectedExperience].company}
-        </h4>
-        <p className="text-lg mb-2">
-          {experience.items[selectedExperience].duration}
-        </p>
-        <ul className="list-disc pl-5 space-y-2">
-          {experience.items[selectedExperience].description.map((desc, idx) => (
-            <li key={idx}>{desc}</li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
+            {/* Right Side: Experience Details */}
+            <div className="text-white">
+              <div className="mb-6">
+                <h4 className="text-2xl text-accent font-bold">
+                  {experience.items[selectedExperience].position} -{" "}
+                  {experience.items[selectedExperience].company}
+                </h4>
+                <p className="text-lg mb-2">
+                  {experience.items[selectedExperience].duration}
+                </p>
+                <ul className="list-disc pl-5 space-y-2 text-white/70">
+                  {experience.items[selectedExperience].description.map(
+                    (desc, idx) => (
+                      <li key={idx}>{desc}</li>
+                    )
+                  )}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Skills Section */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-4 text-center text-purple-400">
-  <span className="border-b-4 border-purple-400 inline-block">{skills.title}</span>
-</h2>
+          <h2 className="text-4xl font-bold mb-4 text-left">
+            <span className="border-b-4 inline-block">
+              {skills.title}
+            </span>
+          </h2>
 
-          <p className="text-center mb-6">{skills.description}</p>
+          <p className="text-left mb-6 text-white/70">{skills.description}</p>
           <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
             {skills.skillList.map((skill, index) => (
               <motion.li
@@ -159,23 +169,26 @@ const Resume = () => {
 
         {/* Education Section */}
         <section>
-  <h3 className="text-4xl font-bold mb-8 text-center text-purple-400">
-    <span className="border-b-4 border-purple-400 inline-block pb-2">{education.title}</span>
-  </h3>
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-    {education.items.map((item, index) => (
-      <div
-        key={index}
-        className="bg-[#232329] p-6 rounded-lg shadow-lg hover:bg-[#35353a] transition-colors"
-      >
-        <h3 className="text-xl font-semibold text-white mb-2">{item.university}</h3>
-        <p className="text-accent">{item.major}</p>
-        <p className="text-white/70">{item.duration}</p>
-      </div>
-    ))}
-  </div>
-</section>
-
+          <h3 className="text-4xl font-bold mb-8 text-left">
+            <span className="border-b-4 inline-block pb-2">
+              {education.title}
+            </span>
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {education.items.map((item, index) => (
+              <div
+                key={index}
+                className="bg-[#232329] p-6 rounded-lg shadow-lg hover:bg-[#35353a] transition-colors"
+              >
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  {item.university}
+                </h3>
+                <p className="text-accent">{item.major}</p>
+                <p className="text-white/70">{item.duration}</p>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
     </motion.div>
   );

@@ -52,16 +52,17 @@ const projects = [
 const Work = () => {
   return (
     <div className="container mx-auto px-4">
-      <h2 className="text-4xl font-bold text-center mb-8">My Projects</h2>
+      <h3 className="text-4xl font-bold mb-8 text-left">
+        <span className="border-b-4 inline-block pb-2">Projects</span>
+      </h3>
+      <p className="text-left mb-6 text-white/70">Some Things I’ve Built</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
             key={index}
             className="shadow-lg rounded-lg p-6 hover:shadow-2xl transition-shadow duration-300 bg-[#232329]"
           >
-            <h3 className="text-2xl font-semibold mb-2">
-              {project.title}
-            </h3>
+            <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
 
             <ul className="list-disc ml-5 mb-4 text-white/70">
               {project.description.map((bullet, bulletIndex) => (
@@ -76,9 +77,7 @@ const Work = () => {
             <div className="flex space-x-4">
               {project.socials.map((item, socialIndex) => (
                 <Link legacyBehavior key={socialIndex} href={project.link}>
-                  <a className=" hover:text-gray-500 text-3xl">
-                    {item.icon}
-                  </a>
+                  <a className=" hover:text-gray-500 text-3xl">{item.icon}</a>
                 </Link>
               ))}
             </div>

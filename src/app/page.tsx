@@ -8,10 +8,14 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/ui/Social";
 import Photo from "@/components/ui/Photo";
 import Stats from "@/components/ui/Stats";
+import Work from './work/page';
+import Resume from './resume/page';
+import Contact from './contact/page';
 
 const Home = () => {
 
-    // Scroll to bottom when the component loads
+   {/*
+     // Scroll to bottom when the component loads
     useEffect(() => {
       const timer = setTimeout(() => {
         window.scrollTo({
@@ -22,6 +26,7 @@ const Home = () => {
     return () => clearTimeout(timer);
   }
 ,     []);  // Empty dependency array ensures this runs only once on component load
+    */}
 
     return (
         <section className="h-full">
@@ -73,7 +78,22 @@ const Home = () => {
             </div>
 
             {/* Stats Component */}
-            <Stats />
+                <Stats />
+            
+            <div className="py-16">
+                {/* Resume Component */}
+                <Resume />
+            </div>
+
+            <div className="py-16 bg-gray-900">
+                {/* Work Component */}
+                <Work />
+            </div>
+
+            <div className="py-12 bg-gray-900">
+                {/* Contact Component */}
+                <Contact />
+            </div>
         </section>
     );
 };

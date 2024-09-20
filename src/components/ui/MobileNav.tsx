@@ -38,11 +38,14 @@ const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* logo */}
-        <div className="mt-28 mb-28 text-center text-2xl">
+        <div className="mt-28 mb-28 flex justify-center item-center">
           <Link href="/">
-            <h1 className="text-4xl font-semibold" onClick={handleClose}>
-              Gaurav<span className="text-accent">.</span>
-            </h1>
+            <img
+              src="/assets/gp_coloured.svg"
+              alt="Logo"
+              className="w-14 h-14" // Adjust width and height as needed
+              onClick={handleClose} // Attach the handleClose function to the img tag
+            />
           </Link>
         </div>
         {/* nav */}
