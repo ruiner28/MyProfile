@@ -130,7 +130,7 @@ const Resume = () => {
                 <button
                   key={index}
                   onClick={() => setSelectedExperience(index)}
-                  className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative  ${
+                  className={`py-3 px-6 rounded-lg border-2 border-transparent transition-colors relative min-w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105  ${
                     selectedExperience === index
                       ? "border-accent"
                       : "border-gray-800"
@@ -195,7 +195,7 @@ const Resume = () => {
             {education.items.map((item, index) => (
               <div
                 key={index}
-                className="bg-[#232329] p-6 rounded-lg shadow-lg hover:bg-[#35353a] transition-colors"
+                className="min-w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105"
               >
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {item.university}
