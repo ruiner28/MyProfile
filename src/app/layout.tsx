@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="ipad_icon.jpg" sizes="any" type="image/x-icon" /> 
+        <link rel="icon" href="/public/ipad_icon.jpg" sizes="any" type="image/x-icon" /> 
       </head>
       <body className={jetBrainsMono.variable}>
         <Header />
