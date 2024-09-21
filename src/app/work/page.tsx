@@ -71,7 +71,7 @@ const Work = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="min-w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105"
+            className="w-full max-w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105"
           >
             <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
 
