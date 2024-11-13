@@ -10,6 +10,9 @@ import {
   FaDatabase,
   FaAws,
   FaLeaf,
+  FaGit,
+  FaGithub,
+  FaDocker,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -18,6 +21,7 @@ import {
   SiFlask,
   SiPostman,
   SiMongodb,
+  SiFirebase,
   SiApachemaven,
 } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -66,11 +70,13 @@ const education = {
       university: "California State University Fullerton",
       major: "MS Computer Science",
       duration: "2024-2026",
+      logo:"/assets/calstate.png",
     },
     {
       university: "Savitribai Phule Pune University (SPPU)",
       major: "BE Information Technology",
       duration: "2018-2022",
+      logo: "/assets/sppu.png",
     },
   ],
 };
@@ -91,6 +97,14 @@ const skills = {
     { icon: <FaDatabase color="#4479A1" />, name: "SQL" },
     { icon: <SiMongodb color="#47A248" />, name: "MongoDB" },
     { icon: <SiPostman color="#FF6C37" />, name: "Postman" },
+    { icon: <FaGit color="#F05032" />, name: "Git" },
+    { icon: <FaGithub color="#181717" />, name: "GitHub" },
+    { icon: <FaDocker color="#2496ED" />, name: "Docker" },
+    { icon: <SiFirebase color="#FFCA28" />, name: "Firebase" },
+    { icon: <FaHtml5 color="#E34F26" />, name: "HTML5" },
+    { icon: <SiApachemaven color="#FFCA28" />, name: "Maven" },
+    { icon: <FaNodeJs color="#000000" />, name: "NodeJS" },
+    { icon: <FaCss3 color="#1572B6" />, name: "CSS3" },
   ],
 };
 
@@ -163,6 +177,7 @@ const Resume = () => {
           </div>
         </section>
 
+        <div className="container mx-auto px-4 py-12">
         {/* Skills Section */}
         <section className="mb-16">
           <h2 className="text-4xl font-bold mb-4 text-left">
@@ -170,42 +185,52 @@ const Resume = () => {
           </h2>
 
           <p className="text-left mb-6 text-white/70">{skills.description}</p>
-          <ul className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
-            {skills.skillList.map((skill, index) => (
-              <motion.li
-                key={index}
-                whileHover={{ scale: 1.1 }}
-                className="bg-[#232329] p-4 rounded-full shadow-lg flex flex-col items-center justify-center"
-              >
-                <div className="text-4xl">{skill.icon}</div>
-                <p className="mt-4 capitalize text-lg">{skill.name}</p>
-              </motion.li>
-            ))}
-          </ul>
-        </section>
 
-        {/* Education Section */}
-        <section>
-          <h3 className="text-4xl font-bold mb-8 text-left">
-            <span className="border-b-4 inline-block pb-2">
-              {education.title}
-            </span>
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            {education.items.map((item, index) => (
-              <div
-                key={index}
-                className="min-w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105"
-              >
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {item.university}
-                </h3>
-                <p className="text-accent">{item.major}</p>
-                <p className="text-white/70">{item.duration}</p>
-              </div>
-            ))}
+          {/* Scrolling Animation */}
+          <div className="overflow-hidden">
+            <div className="flex gap-8 animate-scroll-left">
+              {skills.skillList.map((skill, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.1 }}
+                  className="bg-[#232329] p-4 rounded-full shadow-lg flex flex-col items-center justify-center min-w-[100px]"
+                >
+                  <div className="text-4xl">{skill.icon}</div>
+                  <p className="mt-2 text-lg text-center">{skill.name}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
+      </div>
+       {/* Education Section */}
+<section>
+  <h3 className="text-4xl font-bold mb-8 text-left">
+    <span className="border-b-4 inline-block pb-2">
+      {education.title}
+    </span>
+  </h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    {education.items.map((item, index) => (
+      <div
+        key={index}
+        className="min-w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105 flex flex-col items-center text-center"
+      >
+        <img
+          src={item.logo}
+          alt={`${item.university} logo`}
+          className="w-20 h-20 object-contain mb-4"
+        />
+        <h3 className="text-xl font-semibold text-white mb-2">
+          {item.university}
+        </h3>
+        <p className="text-accent">{item.major}</p>
+        <p className="text-white/70">{item.duration}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
       </div>
     </motion.div>
   );

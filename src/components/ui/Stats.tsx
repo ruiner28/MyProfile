@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const stats = [
     {
-        num:100,
+        num:99,
         text: "Plus Solved LeetCode Questions",
     },
     {
