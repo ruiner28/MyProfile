@@ -36,6 +36,17 @@ const projects = [
     socials: [{ icon: <FaGithub /> }],
   },
   {
+    title: "AI Article Summarizer",
+    description: [
+      "Engineered an AI-driven web application for faster article summarization, processing content 50% quicker than traditional methods",
+      "Applied cutting-edge AI algorithms for generating precise, concise summaries, thereby revolutionizing content consumption",
+      "Introduced a history feature with local storage for easy summary management; added 'copy to clipboard' for user convenience",
+    ],
+    link: "https://url-summary.vercel.app/",
+    technologies: "JavaScript, Node.js, Redux, React, RapidAPI",
+    socials: [{ icon: <FaGithub /> }],
+  },
+  {
     title: "Employee Management System",
     description: [
       "Implemented a Java-based microservice using Spring Boot.",
