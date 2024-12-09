@@ -15,17 +15,6 @@ const socials = [
 
 const projects = [
   {
-    title: "Self-Driving Car Service",
-    description: [
-      "Developed a web app for self-driving and rental car services using the Flask framework.",
-      "Built the back-end in Python and the front-end with HTML, CSS, and JavaScript.",
-      "Coded CRUD operations on a local database for managing car service data.",
-    ],
-    link: "https://github.com/ruiner28/DriveMe-Final",
-    technologies: "python, javascript, flask",
-    socials: [{ icon: <FaGithub /> }],
-  },
-  {
     title: "Portfolio Project",
     description: [
       "Developed an interactive portfolio website using React, Next.js, and Tailwind CSS",
@@ -38,23 +27,11 @@ const projects = [
   {
     title: "AI Article Summarizer",
     description: [
-      "Engineered an AI-driven web application for faster article summarization, processing content 50% quicker than traditional methods",
-      "Applied cutting-edge AI algorithms for generating precise, concise summaries, thereby revolutionizing content consumption",
+      "Engineered an AI-driven web application for faster article summarization.",
       "Introduced a history feature with local storage for easy summary management; added 'copy to clipboard' for user convenience",
     ],
     link: "https://url-summary.vercel.app/",
     technologies: "JavaScript, Node.js, Redux, React, RapidAPI",
-    socials: [{ icon: <FaGithub /> }],
-  },
-  {
-    title: "Employee Management System",
-    description: [
-      "Implemented a Java-based microservice using Spring Boot.",
-      "Deployed the application on Amazon EC2, demonstrating expertise in cloud deployment.",
-      "Coded front-end web pages using React.js and utilized React hooks for logic extraction.",
-    ],
-    link: "",
-    technologies: "Java, Springboot, React",
     socials: [{ icon: <FaGithub /> }],
   },
   {
@@ -68,6 +45,28 @@ const projects = [
     technologies: "python, flask",
     socials: [{ icon: <FaGithub /> }],
   },
+  {
+    title: "Self-Driving Car Service",
+    description: [
+      "Developed a web app for self-driving and rental car services using the Flask framework.",
+      "Built the back-end in Python and the front-end with HTML, CSS, and JavaScript.",
+      "Coded CRUD operations on a local database for managing car service data.",
+    ],
+    link: "https://github.com/ruiner28/DriveMe-Final",
+    technologies: "python, javascript, flask",
+    socials: [{ icon: <FaGithub /> }],
+  },
+  {
+    title: "Employee Management System",
+    description: [
+      "Implemented a Java-based microservice using Spring Boot.",
+      "Deployed the application on Amazon EC2, demonstrating expertise in cloud deployment.",
+      "Coded front-end web pages using React.js and utilized React hooks for logic extraction.",
+    ],
+    link: "",
+    technologies: "Java, Springboot, React",
+    socials: [{ icon: <FaGithub /> }],
+  },
 ];
 
 const Work = () => {
@@ -77,12 +76,12 @@ const Work = () => {
         <span className="border-b-4 inline-block pb-2">Projects</span>
       </h3>
       <p className="text-left mb-6 text-white/70">Some Things I’ve Built</p>
-      
-      <div className="flex overflow-x-auto space-x-4 pb-4">
+
+      <div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-300">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="w-full max-w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105"
+            className="flex-none w-[300px] shadow-lg rounded-lg p-6 transition-all duration-300 bg-[#232329] transform hover:shadow-2xl hover:scale-105"
           >
             <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
 
