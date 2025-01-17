@@ -54,7 +54,6 @@ const Home = () => {
                                 variant="outline"
                                 size="lg"
                                 className="uppercase flex items-center gap-2"
-                                className="uppercase flex items-center gap-2"
                             >
                                 <span>Download Resume</span>
                                 <FiDownload className="text-xl" />
