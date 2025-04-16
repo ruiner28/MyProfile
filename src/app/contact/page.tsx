@@ -46,7 +46,6 @@ const Contact = () => {
           <Button
             variant="outline"
             size="lg"
-            s
             className="uppercase flex items-center gap-2"
           >
             <span>Say Hello!</span>
