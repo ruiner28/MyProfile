@@ -71,6 +71,17 @@ const experience = {
       "Integrated DeepSource for continuous code quality checks and auto pull request merges, improving review time by 30%"
       ],
     },
+    {
+      company: "@ California State University Fullerton",
+      position: "Teaching Assistant 👨‍🏫",
+      duration: "08/2025 - 05/2026",
+      description: [
+      "Designed and maintained a comprehensive syllabus and detailed lecture presentations for the Compilers and Programming Languages course, catering to 40 students and integrating complex theoretical concepts with practical applications.",  
+      "Assisted in the development and delivery of course materials for undergraduate computer science courses, enhancing student engagement and understanding.",
+      "Conducted weekly lab sessions and office hours, providing one-on-one support to students and fostering a collaborative learning environment.",
+      "Collaborated with faculty to design and implement innovative teaching strategies, resulting in improved student performance and satisfaction.",
+      ],
+    },
   ],
 };
 
