@@ -51,13 +51,24 @@ const experience = {
     {
       company: "@ Accenture",
       position: "Software Engineer 👨‍💻",
-      duration: "2022-2024",
+      duration: "12/2022 - 07/2024",
       description: [
         "Designed and developed new modules for an insurance e-application from scratch (using JS), managing the entire development lifecycle from conceptualization to deployment",
         "Resolved 50+ complex calculation issues by debugging and mitigating defects in a key insurance application, resulting in a 30% reduction in calculation error rates",
         "Integrated Jenkins and Bitbucket CI/CD pipelines, reducing deployment time by 25% and accelerating release cycles",
         "Refactored and streamlined critical e-application code, achieving a 40% boost in performance and cutting page load times by 20%",
         "Contributed to the full Agile SDLC, designing and developing application functionalities, creating learning materials, and handling deployments.",
+      ],
+    },
+     {
+      company: "@ Market EQ Digital",
+      position: "Backend Engineering Intern 👨‍💻",
+      duration: "06/2025 - 08/2024",
+      description: [
+      "Implemented QuickBooks (Intuit API) and Zapier for automated wire transfer invoicing and reconciliation workflows, reducing manual operations by 60% and ensuring real-time sync with internal systems.",
+      "Built and integrated complete payment workflows using Stripe API for one-time and subscription payments, wallet functionality, and gift card support, handling over 5,000+ user transactions during the internship period.",
+      "Designed and deployed a scalable microservices architecture on Render, containerizing services using Docker and migrating infrastructure and PostgreSQL databases from Heroku, improving deployment efficiency by 40%.",
+      "Integrated DeepSource for continuous code quality checks and auto pull request merges, improving review time by 30%"
       ],
     },
   ],
