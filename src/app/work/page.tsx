@@ -15,6 +15,30 @@ const socials = [
 
 const projects = [
   {
+    title: "IntervYou",
+    description: [
+      "Built IntervYou—a multimodal interview coach that ingests a candidate’s resume + job description and auto-generates role-specific practice questions (behavioral & technical) using LLM/NLP prompts aligned to competencies.",
+      "Implemented real-time evaluation across audio, video, and text: ASR transcription, prosody/pace/filler-word detection, CV-based facial expression & eye-contact cues, and NLP scoring for relevance, clarity, and STAR structure.",
+      "Designed a scoring rubric & feedback engine that maps answers to job requirements and returns timestamped insights, strengths/risk flags, suggested rephrases, and adaptive follow-ups; added a progress dashboard for session-over-session improvement.",
+    ],
+    link: "",
+    technologies: "React, Next.js, Tailwind CSS",
+    socials: [{ icon: <FaGithub /> }],
+  },
+  {
+    title: "Lumora",
+    description: [
+      "Built and launched a therapy chatbot using LLMs with persistent session memory and multilingual support; enabled empathetic, real-time conversations and context carry-over across sessions.",
+      "Shipped login/signup + SSO and a journaling workspace with streaks, mood tagging, and history; users receive personalized mood-booster quotes based on chat + journal context.",
+      "Implemented therapist portal and in-app scheduling; the system flags at-risk users from conversation signals and recommends licensed therapists by issue category.",
+      "Designed privacy-first data model with role-based access (patient/therapist) and consented sharing; all content stored in Firebase with granular security rules.",
+      "Added context-aware retrieval (conversation + journal embeddings) to reduce repeated prompts and improve response relevance; prompt-engineered safety/guardrails and crisis-escalation flows.",
+    ],
+    link: "http://lumoraa.app/",
+    technologies: "React, Next.js, Tailwind CSS",
+    socials: [{ icon: <FaGithub /> }],
+  },
+  {
     title: "Portfolio Project",
     description: [
       "Developed an interactive portfolio website using React, Next.js, and Tailwind CSS",
