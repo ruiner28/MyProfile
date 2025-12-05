@@ -73,7 +73,7 @@ const experience = {
     },
     {
       company: "@ California State University Fullerton",
-      position: "Teaching Assistant 👨‍🏫",
+      position: "Teaching Associate 👨‍🏫",
       duration: "08/2025 - 05/2026",
       description: [
       "Designed and maintained a comprehensive syllabus and detailed lecture presentations for the Compilers and Programming Languages course, catering to 40 students and integrating complex theoretical concepts with practical applications.",  
