@@ -47,7 +47,7 @@ const Home = () => {
                         {/* Button and Social Media Links */}
                         <div className="flex flex-col xl:flex-row items-center gap-8">
                             {/* Download CV Button */}
-                            <a href="https://drive.google.com/file/d/1BK6HexHqAjsSM28DrcssaN0GCgFYW472/view?usp=sharing"
+                            <a href="https://drive.google.com/file/d/1lXQhoYYv1qYnEeoT0h1A0bF5FJKAl2hy/view?usp=sharing"
                                target='_blank'
                                rel='noopener noreferrer'>
                             <Button
