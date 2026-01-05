@@ -17,9 +17,7 @@ const projects = [
   {
     title: "IntervYou",
     description: [
-    "Developed “IntervYou” — a multimodal AI interview coach that analyzes a candidate’s resume and job description to auto-generate role-specific behavioral and technical questions.",
-    "Built real-time evaluation across audio, video, and text: includes ASR transcription, prosody and filler-word detection, facial expression and eye-contact analysis, and NLP-based scoring for relevance, clarity, and STAR structure.",
-    ],
+    "Developed “IntervYou” — a multimodal AI interview coach that analyzes a candidate’s resume and job description to auto-generate role-specific behavioral and technical questions."],
     link: "",
     technologies: "React, Next.js, Tailwind CSS",
     socials: [{ icon: <FaGithub /> }],
