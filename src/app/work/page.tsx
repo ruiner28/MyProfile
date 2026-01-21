@@ -17,8 +17,10 @@ const projects = [
   {
     title: "IntervYou",
     description: [
-    "Developed “IntervYou” — a multimodal AI interview coach that analyzes a candidate’s resume and job description to auto-generate role-specific behavioral and technical questions."],
-    link: "",
+    "Developed “IntervYou” — a multimodal AI interview coach that analyzes a candidate’s resume and job description to auto-generate role-specific behavioral and technical questions.",
+    "System Design - Practice questions on system design we have Excalidraw integrated into our application."
+    ],
+    link: "https://interview-ai-umber.vercel.app/",
     technologies: "React, Next.js, Tailwind CSS",
     socials: [{ icon: <FaGithub /> }],
   },
