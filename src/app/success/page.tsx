@@ -6,11 +6,21 @@ export default function SuccessPage() {
   const router = useRouter();
 
   useEffect(() => {
+    const sendMessage = async () => {
+      try {
+        await fetch('/api/send-sms', { method: 'POST' });
+      } catch (err) {
+        console.error('Failed to send SMS:', err);
+      }
+    };
+
+    sendMessage();
+
     const timer = setTimeout(() => {
       router.push('/');
-    }, 5000); // 5 seconds
+    }, 7000);
 
-    return () => clearTimeout(timer); // cleanup
+    return () => clearTimeout(timer);
   }, [router]);
 
   return (
