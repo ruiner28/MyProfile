@@ -37,7 +37,7 @@ const about = {
     },
     {
       fieldValue:
-        "I'm actively seeking summer 2025 internship roles where I can contribute my skills in coding and finding efficient solutions.",
+        "I'm actively seeking full-time SDE or Backend Engineer role where I can contribute my skills in coding and finding efficient solutions.",
     },
     {
       fieldValue: "Together, we can build the code of tomorrow!",
@@ -73,7 +73,7 @@ const experience = {
     },
     {
       company: "@ California State University Fullerton",
-      position: "Teaching Associate 👨‍🏫",
+      position: "Teaching Assistant 👨‍🏫",
       duration: "08/2025 - 05/2026",
       description: [
       "Designed and maintained a comprehensive syllabus and detailed lecture presentations for the Compilers and Programming Languages course, catering to 40 students and integrating complex theoretical concepts with practical applications.",  
