@@ -17,9 +17,7 @@ const projects = [
   {
     title: "InterviewAI",
     description: [
-    "Built InterviewAI, a full-stack AI-powered interview prep platform delivering behavioral, coding, system design, salary negotiation, and resume/JD-based interviews with multimodal AI interactions (text, hybrid voice, and real-time voice coaching) using Gemini API and open-source speech models.",
-    "Designed an interactive system design and personalization engine, integrating Excalidraw whiteboarding, AI-driven architectural feedback, resume/JD-based interview customization, and analytics dashboards to track preparation progress, session history, and performance trends.",
-    ],
+   "Built InterviewAI, a full-stack AI-powered interview preparation platform featuring multimodal AI coaching (text, hybrid voice, real-time voice), personalized behavioral/coding/system design/salary negotiation interviews, Excalidraw-based interactive whiteboarding, resume/JD-driven customization, and analytics dashboards for performance tracking.", ],
     link: "https://interviewai-zeta-gray.vercel.app/",
     technologies: "React, Next.js, Tailwind CSS",
     socials: [{ icon: <FaGithub /> }],
