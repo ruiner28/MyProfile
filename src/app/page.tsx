@@ -40,7 +40,7 @@ const Home = () => {
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
                             I excel as a full-stack developer, crafting dynamic user experiences with React in the front end and powering the back end with Java and Python's versatility.
-                            I'm actively seeking a summer 2025 internship role where I can contribute my skills in coding and finding efficient solutions.
+                            I'm actively seeking full-time SDE or Backend Engineer role where I can contribute my skills in coding and finding efficient solutions.
                             Together, we can build the code of tomorrow!
                         </p>
                         

@@ -15,10 +15,11 @@ const socials = [
 
 const projects = [
   {
-    title: "IntervYou",
+    title: "InterviewAI",
     description: [
-    "Developed “IntervYou” — a multimodal AI interview coach that analyzes a candidate’s resume and job description to auto-generate role-specific behavioral and technical questions.",
-    "Built real-time evaluation across audio, video, and text: includes ASR transcription, prosody and filler-word detection, facial expression and eye-contact analysis, and NLP-based scoring for relevance, clarity, and STAR structure.",
+      "Built IntervYou—a multimodal interview coach that ingests a candidate’s resume + job description and auto-generates role-specific practice questions (behavioral & technical) using LLM/NLP prompts aligned to competencies.",
+      "Implemented real-time evaluation across audio, video, and text: ASR transcription, prosody/pace/filler-word detection, CV-based facial expression & eye-contact cues, and NLP scoring for relevance, clarity, and STAR structure.",
+      "Designed a scoring rubric & feedback engine that maps answers to job requirements and returns timestamped insights, strengths/risk flags, suggested rephrases, and adaptive follow-ups; added a progress dashboard for session-over-session improvement.",
     ],
     link: "",
     technologies: "React, Next.js, Tailwind CSS",

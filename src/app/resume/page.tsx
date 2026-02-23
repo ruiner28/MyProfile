@@ -37,7 +37,7 @@ const about = {
     },
     {
       fieldValue:
-        "I'm actively seeking summer 2025 internship roles where I can contribute my skills in coding and finding efficient solutions.",
+        "I'm actively seeking full-time SDE or Backend Engineer role where I can contribute my skills in coding and finding efficient solutions.",
     },
     {
       fieldValue: "Together, we can build the code of tomorrow!",
