@@ -15,10 +15,10 @@ const socials = [
 
 const projects = [
   {
-    title: "IntervYou",
+    title: "InterviewAI",
     description: [
-    "Developed “IntervYou” — a multimodal AI interview coach that analyzes a candidate’s resume and job description to auto-generate role-specific behavioral and technical questions.",
-    "System Design - Practice questions on system design we have Excalidraw integrated into our application."
+    "Built InterviewAI, a full-stack AI-powered interview prep platform delivering behavioral, coding, system design, salary negotiation, and resume/JD-based interviews with multimodal AI interactions (text, hybrid voice, and real-time voice coaching) using Gemini API and open-source speech models.",
+    "Designed an interactive system design and personalization engine, integrating Excalidraw whiteboarding, AI-driven architectural feedback, resume/JD-based interview customization, and analytics dashboards to track preparation progress, session history, and performance trends.",
     ],
     link: "https://interviewai-zeta-gray.vercel.app/",
     technologies: "React, Next.js, Tailwind CSS",
