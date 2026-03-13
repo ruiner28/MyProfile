@@ -19,8 +19,8 @@ const projects = [
     description: [
      "Built InterviewAI, a full-stack AI-powered interview preparation platform featuring multimodal AI coaching (text, hybrid voice, real-time voice), personalized behavioral/coding/system design/salary negotiation interviews, Excalidraw-based interactive whiteboarding, resume/JD-driven customization, and analytics dashboards for performance tracking." 
     ],
-    link: "",
-    technologies: "React, Next.js, Tailwind CSS",
+    link: "https://interviewai-zeta-gray.vercel.app/",
+    technologies: "TypeScript, NestJS, Next.js, Docker, PostgreSQL, Genkit",
     socials: [{ icon: <FaGithub /> }],
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     "Shipped therapist portal & scheduling; flagged at-risk users and matched licensed therapists."
     ],
     link: "http://lumoraa.app/",
-    technologies: "React, Next.js, Tailwind CSS",
+    technologies: "TypeScript, Next.js, Node.js, LLMs, Firebase Authentication, Firestore",
     socials: [{ icon: <FaGithub /> }],
   },
   {
