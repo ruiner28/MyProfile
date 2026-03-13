@@ -17,9 +17,7 @@ const projects = [
   {
     title: "InterviewAI",
     description: [
-      "Built IntervYou—a multimodal interview coach that ingests a candidate’s resume + job description and auto-generates role-specific practice questions (behavioral & technical) using LLM/NLP prompts aligned to competencies.",
-      "Implemented real-time evaluation across audio, video, and text: ASR transcription, prosody/pace/filler-word detection, CV-based facial expression & eye-contact cues, and NLP scoring for relevance, clarity, and STAR structure.",
-      "Designed a scoring rubric & feedback engine that maps answers to job requirements and returns timestamped insights, strengths/risk flags, suggested rephrases, and adaptive follow-ups; added a progress dashboard for session-over-session improvement.",
+     "Built InterviewAI, a full-stack AI-powered interview preparation platform featuring multimodal AI coaching (text, hybrid voice, real-time voice), personalized behavioral/coding/system design/salary negotiation interviews, Excalidraw-based interactive whiteboarding, resume/JD-driven customization, and analytics dashboards for performance tracking." 
     ],
     link: "",
     technologies: "React, Next.js, Tailwind CSS",
