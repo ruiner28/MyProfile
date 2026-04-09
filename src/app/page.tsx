@@ -14,7 +14,7 @@ import Contact from './contact/page';
 
 const Home = () => {
 
-   {/*
+    {/*
      // Scroll to bottom when the component loads
     useEffect(() => {
       const timer = setTimeout(() => {
@@ -43,22 +43,22 @@ const Home = () => {
                             I'm actively seeking full-time SDE or Backend Engineer role where I can contribute my skills in coding and finding efficient solutions.
                             Together, we can build the code of tomorrow!
                         </p>
-                        
+
                         {/* Button and Social Media Links */}
                         <div className="flex flex-col xl:flex-row items-center gap-8">
                             {/* Download CV Button */}
-                            <a href="https://drive.google.com/file/d/1JL4JGMsUvJqmQJICa-rW4i8F6jA70F59/view?usp=drive_link"
-                               target='_blank'
-                               rel='noopener noreferrer'>
-                            <Button
-                                variant="outline"
-                                size="lg"
-                                className="uppercase flex items-center gap-2"
-                            >
-                                <span>Download Resume</span>
-                                <FiDownload className="text-xl" />
-                            </Button>
-                            </a> 
+                            <a href="https://drive.google.com/file/d/1SSdrjPLypoY4m90rRJi2Ici9HQi0zLX8/view"
+                                target='_blank'
+                                rel='noopener noreferrer'>
+                                <Button
+                                    variant="outline"
+                                    size="lg"
+                                    className="uppercase flex items-center gap-2"
+                                >
+                                    <span>Download Resume</span>
+                                    <FiDownload className="text-xl" />
+                                </Button>
+                            </a>
 
                             {/* Social Media Links */}
                             <div className="mb-8 xl:mb-0">
@@ -78,8 +78,8 @@ const Home = () => {
             </div>
 
             {/* Stats Component */}
-                <Stats />
-            
+            <Stats />
+
             <div className="py-16">
                 {/* Resume Component */}
                 <Resume />
